@@ -1,6 +1,10 @@
 import pandas as pd
 import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
 from datetime import datetime
+import warnings
+warnings.filterwarnings('ignore')
 
 # Load the CRM data
 df = pd.read_excel('CRM-and-Sales-Pipelines_C17_English-1-3-1.xlsx', sheet_name='CRM_data')
@@ -8,14 +12,10 @@ df = pd.read_excel('CRM-and-Sales-Pipelines_C17_English-1-3-1.xlsx', sheet_name=
 # Display basic information about the dataset
 print("Dataset Overview:")
 print(f"Total records: {len(df)}")
-print(f"Columns: {len(df.columns)}")
+print(f"Total columns: {len(df.columns)}")
 print("\nColumn names:")
-print(df.columns.tolist())
+for i, col in enumerate(df.columns):
+    print(f"{i+1}. {col}")
 
-# Display first few rows to understand the structure
-print("\nFirst 5 rows:")
-print(df.head())
-
-# Check data types
-print("\nData types:")
-print(df.dtypes)
+print("\nFirst few rows:")
+df.head()
