@@ -1,0 +1,13 @@
+﻿Pipeline Snapshot: What does my current sales pipeline look like (e.g., how many opportunities are at each sales stage)?
+
+
+Sales Forecast: What is the sales forecast by months based on current opportunities, deal values, probabilities, and expected close dates?
+
+
+Opportunity Closure Time: How long does it take for opportunities to close? Are there differences by country?
+
+
+Actual Win Rates: What is our actual win ratio? Are there variations based on country?
+
+
+Win Rates by Product and Region: What is the win ratio across various products and geographic markets?
