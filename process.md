@@ -1,5 +1,3 @@
-<img src="https://r2cdn.perplexity.ai/pplx-full-logo-primary-dark%402x.png" class="logo" width="120"/>
-
 # CRM Sales Pipeline Analysis – Process \& Methodology
 
 This document outlines the complete, step-by-step process for the CRM Sales Pipeline Analysis project, aligned with industry portfolio standards. Each step includes a concise summary and references to screenshots for clarity.
@@ -82,15 +80,4 @@ drafted `business-impact-results.md` and `executive-summary.md` to highlight met
 ### 4.16 Publish Dashboard \& Final Deliverables
 
 Published interactive dashboard on Tableau Public and linked it in the project README. Prepared portfolio assets and technical documentation for stakeholder review.
-
-**Screenshot Status Legend:**
-📷 Done — screenshots captured and uploaded
-🟡 In progress — pending capture
-🔘 Not started — to be captured
-
-*Screenshot references for each step are stored in the `screenshots/` directory.*
-
-<div style="text-align: center">⁂</div>
-
-[^1]: https://github.com/FarooqSyed0/California-SaaS-Startup-Growth-Funding-Analysis/blob/master/process.md
 
