@@ -1,9 +1,3 @@
-<img src="https://r2cdn.perplexity.ai/pplx-full-logo-primary-dark%402x.png" class="logo" width="120"/>
-
-# here is the next md -  https://github.com/FarooqSyed0/California-SaaS-Startup-Growth-Funding-Analysis/blob/master/README.md
-
-Based on the reference README.md file structure, I'll now create an equivalent README for the CRM project using the same format and style:
-
 # CRM Sales Pipeline Analysis
 
 **Business Problem:** Analyzed 3,000+ CRM opportunities to identify sales performance patterns, optimize pipeline management, and provide data-driven insights for revenue growth and strategic decision-making.
@@ -65,18 +59,3 @@ Jupyter notebook containing the Python code for data cleaning, transformation, a
 A collection of SQL queries used for extracting, transforming, and analyzing CRM data within the project. These queries support key business questions and deliver actionable insights for sales pipeline optimization.
 
 **Portfolio Value:** This project demonstrates end-to-end CRM analytics capabilities, from data ingestion through strategic recommendations, showcasing technical proficiency in Python, SQL, and business intelligence tools while delivering measurable business impact through pipeline optimization and revenue forecasting.
-
-<div style="text-align: center">⁂</div>
-
-[^1]: https://github.com/FarooqSyed0/California-SaaS-Startup-Growth-Funding-Analysis/blob/master/README.md
-
-[^2]: https://public.tableau.com/app/profile/farooq.syed6811/viz/CaliforniaSaaSStartupGrowthFundingAnalysis_17511350716100/CaliforniaSaaSStartupGrowthFundingAnalysis?publish=yes
-
-[^3]: https://github.com/FarooqSyed0/California-SaaS-Startup-Growth-Funding-Analysis/blob/master/business-impact-results.md
-
-[^4]: https://github.com/FarooqSyed0/California-SaaS-Startup-Growth-Funding-Analysis/blob/master/executive-summary.md
-
-[^5]: https://github.com/FarooqSyed0/California-SaaS-Startup-Growth-Funding-Analysis/blob/master/process.md
-
-[^6]: https://github.com/FarooqSyed0/California-SaaS-Startup-Growth-Funding-Analysis/blob/master/technical-documentation.md
-
