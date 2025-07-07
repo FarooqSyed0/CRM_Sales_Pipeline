@@ -10,7 +10,7 @@
 | 📈 **Revenue Forecasting** What is the sales forecast accuracy for strategic planning? | 💰 **\$2.2M average monthly weighted revenue** projections established<br>Average deal size: **\$2,758** with progressive growth from \$138K (Q1) to \$930K (Q4) enabling data-driven revenue planning |
 | ⏱️ **Sales Cycle Optimization** How do regional sales cycles impact cash flow and operational efficiency? | 📍 **62.1 days average closure time** with 14.6% variance across markets<br>Germany fastest at 56.9 days, Italy slowest at 65.2 days—providing critical insights for working capital management |
 | 🎯 **Performance Benchmarking** What are the actual win rate benchmarks for competitive positioning? | 📊 **5.7% overall win rate** with 100%+ performance variance between markets<br>Netherlands leads at 7.8%, Switzerland trails at 3.8%—enabling targeted improvement strategies |
-| 🌐 ** Product-Market Optimization**Which product-market combinations offer the highest revenue potential? | 🚀 **Belgium Services: 10.1% win rate** identified as top performer<br>Product-region analysis reveals specific combinations achieving 75%+ higher win rates than global averages |
+| 🌐 **Product-Market Optimization** Which product-market combinations offer the highest revenue potential? | 🚀 **Belgium Services: 10.1% win rate** identified as top performer<br>Product-region analysis reveals specific combinations achieving 75%+ higher win rates than global averages |
 
 ## 🛠️ Technologies Used
 
@@ -22,7 +22,7 @@
 ![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 ![DBeaver](https://img.shields.io/badge/DBeaver-382923?style=for-the-badge&logo=dbeaver&logoColor=white)
 ![Google Sheets](https://img.shields.io/badge/Google%20Sheets-34A853?style=for-the-badge&logo=google-sheets&logoColor=white)
-![Mermaid](https://img.shields.io/badge/Mermaid-FF3670?style=for-the-badge&logo=mermaid&logoColor=white)
+![Mermaid JS](https://img.shields.io/badge/Mermaid-FF3670?style=for-the-badge&logo=mermaid&logoColor=white)
 ![Google Workspace](https://img.shields.io/badge/Google%20Workspace-4285F4?style=for-the-badge&logo=google&logoColor=white)
 ![Anaconda Cloud](https://img.shields.io/badge/Anaconda%20Cloud-44A833?style=for-the-badge&logo=anaconda&logoColor=white)
 ![Microsoft Excel](https://img.shields.io/badge/Microsoft%20Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white)
