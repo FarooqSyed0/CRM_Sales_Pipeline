@@ -50,13 +50,13 @@
 
 ## 📖 Technical Documentation
 
-| Data Model Design \& Schema Architecture | SQL Business Queries |
-| :-- | :-- |
-| [View Data Model](#) | [View SQL Queries](#) |
+| <img src="./screenshots/sql_business_question.png" alt="SQL Business Question" width="500"><br><b>SQL Business Question</b> | <img src="./screenshots/win_rates.png" alt="Win Rates" width="500"><br><b>Win Rates</b> |
+|-----------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
+| <img src="./screenshots/forecast.png" alt="Forecast" width="500"><br><div align="center"><b>Forecast</b></div>               | <img src="./screenshots/opps_stage.png" alt="Opportunity Stage" width="500"><br><div align="center"><b>Opportunity Stage</b></div> |
 
-| Python Data Cleaning | Python Visualization |
-| :-- | :-- |
-| [View Cleaning Code](#) | ![Opportunity Stage Screenshot](https://github.com/FarooqSyed0/CRM_Sales_Pipeline/raw/master/screenshots/opps_stage.png)
+
+
+
 
 
 ## Supporting Resources
