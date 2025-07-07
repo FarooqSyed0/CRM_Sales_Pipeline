@@ -42,11 +42,8 @@
 
 ## 🗺️ Project Workflow
 
-1. **Data Acquisition \& Exploration** → CSV ingestion and initial profiling
-2. **Data Cleaning \& Validation** → Quality assessment and standardization
-3. **Statistical Analysis** → Pipeline metrics and performance calculations
-4. **Visualization \& Dashboard** → Interactive charts and KPI development
-5. **Documentation \& Publishing** → Technical documentation and portfolio prep
+<img src="./screenshots/workflow.png" alt="Workflow Diagram" width="900">
+
 
 ## 📖 Technical Documentation
 
