@@ -50,6 +50,10 @@
 
 ## 📖 Technical Documentation
 
+[View Sales Pipeline Analysis Notebook](./src/sales_pipeline_analysis.ipynb)
+
+
+
 | Data Model Design \& Schema Architecture | SQL Business Queries |
 | :-- | :-- |
 | [View Data Model](#) | [View SQL Queries](#) |
