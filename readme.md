@@ -6,11 +6,11 @@
 
 | Question | Key Result |
 | :-- | :-- |
-| 📊 **Pipeline Optimization**What does my current sales pipeline look like and how can it be optimized? | 🏆 **2,652 active opportunities identified** across seven pipeline stages<br>28.9% concentrated in "Opportunity" stage—providing clear visibility into conversion potential and resource allocation needs |
-| 📈 **Revenue Forecasting**What is the sales forecast accuracy for strategic planning? | 💰 **\$2.2M average monthly weighted revenue** projections established<br>Average deal size: **\$2,758** with progressive growth from \$138K (Q1) to \$930K (Q4) enabling data-driven revenue planning |
-| ⏱️ **Sales Cycle Optimization**How do regional sales cycles impact cash flow and operational efficiency? | 📍 **62.1 days average closure time** with 14.6% variance across markets<br>Germany fastest at 56.9 days, Italy slowest at 65.2 days—providing critical insights for working capital management |
-| 🎯 **Performance Benchmarking**What are the actual win rate benchmarks for competitive positioning? | 📊 **5.7% overall win rate** with 100%+ performance variance between markets<br>Netherlands leads at 7.8%, Switzerland trails at 3.8%—enabling targeted improvement strategies |
-| 🌐 **Product-Market Optimization**Which product-market combinations offer the highest revenue potential? | 🚀 **Belgium Services: 10.1% win rate** identified as top performer<br>Product-region analysis reveals specific combinations achieving 75%+ higher win rates than global averages |
+| 📊 **Pipeline Optimization** What does my current sales pipeline look like and how can it be optimized? | 🏆 **2,652 active opportunities identified** across seven pipeline stages<br>28.9% concentrated in "Opportunity" stage—providing clear visibility into conversion potential and resource allocation needs |
+| 📈 **Revenue Forecasting** What is the sales forecast accuracy for strategic planning? | 💰 **\$2.2M average monthly weighted revenue** projections established<br>Average deal size: **\$2,758** with progressive growth from \$138K (Q1) to \$930K (Q4) enabling data-driven revenue planning |
+| ⏱️ **Sales Cycle Optimization** How do regional sales cycles impact cash flow and operational efficiency? | 📍 **62.1 days average closure time** with 14.6% variance across markets<br>Germany fastest at 56.9 days, Italy slowest at 65.2 days—providing critical insights for working capital management |
+| 🎯 **Performance Benchmarking** What are the actual win rate benchmarks for competitive positioning? | 📊 **5.7% overall win rate** with 100%+ performance variance between markets<br>Netherlands leads at 7.8%, Switzerland trails at 3.8%—enabling targeted improvement strategies |
+| 🌐 ** Product-Market Optimization**Which product-market combinations offer the highest revenue potential? | 🚀 **Belgium Services: 10.1% win rate** identified as top performer<br>Product-region analysis reveals specific combinations achieving 75%+ higher win rates than global averages |
 
 ## 🛠️ Technologies Used
 
@@ -50,17 +50,14 @@
 
 ## 📖 Technical Documentation
 
-[View Sales Pipeline Analysis Notebook](./src/sales_pipeline_analysis.ipynb)
-
-
-
 | Data Model Design \& Schema Architecture | SQL Business Queries |
 | :-- | :-- |
 | [View Data Model](#) | [View SQL Queries](#) |
 
 | Python Data Cleaning | Python Visualization |
 | :-- | :-- |
-| [View Cleaning Code](#) | [View Visualization Code](#) |
+| [View Cleaning Code](#) | ![Opportunity Stage Screenshot](https://github.com/FarooqSyed0/CRM_Sales_Pipeline/raw/master/screenshots/opps_stage.png)
+
 
 ## Supporting Resources
 
