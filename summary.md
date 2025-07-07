@@ -1,5 +1,3 @@
-<img src="https://r2cdn.perplexity.ai/pplx-full-logo-primary-dark%402x.png" class="logo" width="120"/>
-
 # CRM Sales Pipeline Analysis - Executive Summary
 
 Based on the comprehensive analysis of your 3,000 CRM records, here are the answers to your five key questions:
@@ -183,12 +181,3 @@ Win Rates by Product and Country - Performance Heatmap (%)
 2. **Expand SAAS efforts in Portugal** (9.5% win rate)
 3. **Investigate German and Swiss market challenges** (consistently lower win rates)
 4. **Leverage closure time advantages** in Germany, Austria, and Netherlands for competitive positioning
-
-<div style="text-align: center">⁂</div>
-
-[^1]: CRM-and-Sales-Pipeline-Analysis-Report.docx
-
-[^2]: CRM-and-Sales-Pipelines.csv
-
-[^3]: https://github.com/FarooqSyed0/project-2/tree/master/src
-
