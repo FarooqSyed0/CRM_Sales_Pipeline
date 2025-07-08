@@ -65,17 +65,12 @@
 
 ## Supporting Resources
 
-- **Business Impact Results** `business-impact-results.md`
-A detailed analysis of how CRM data insights influence sales performance outcomes, featuring key metrics, win rate benchmarks, and the impact of regional strategies on revenue generation.
-- **Executive Summary** `executive-summary.md`
-An overview highlighting the main findings, strategic insights, and key takeaways from the CRM Sales Pipeline Analysis, providing a concise snapshot of performance trends and optimization opportunities.
-- **Process** `process.md`
-A step-by-step documentation of the research and analytical methods used in the CRM Sales Pipeline Analysis, detailing data collection, processing, and evaluation procedures.
-- **Technical Documentation** `technical-documentation.md`
-Comprehensive technical reference outlining the project's infrastructure, tools, and implementation details for the CRM Sales Pipeline Analysis.
-- **Python Data Cleaning \& Analysis Notebook** `src/python_cleaning_analysis.ipynb`
-Jupyter notebook containing the Python code for data cleaning, transformation, and core analytical workflows used in the CRM project.
-- **Business Analysis SQL Queries** `src/business_analysis_queries.sql`
-A collection of SQL queries used for extracting, transforming, and analyzing CRM data within the project. These queries support key business questions and deliver actionable insights for sales pipeline optimization.
+-  **CRM Sales Pipeline Analysis** `process.ipynb` A comprehensive Jupyter notebook containing Python code for data cleaning, transformation, and core analytical workflows used to analyze 3,000+ CRM opportunities. This notebook details the complete data processing pipeline, from initial data import through advanced sales performance analytics and visualization.
 
-**Portfolio Value:** This project demonstrates end-to-end CRM analytics capabilities, from data ingestion through strategic recommendations, showcasing technical proficiency in Python, SQL, and business intelligence tools while delivering measurable business impact through pipeline optimization and revenue forecasting.
+-  **Business Analysis SQL Queries** `src/business_analysis_queries.sql` A collection of SQL queries designed to extract key business insights from CRM data, including pipeline snapshots, sales forecasting, closure time analysis, win rate calculations, and product-region performance metrics. These queries support strategic decision-making and operational optimization.
+
+-  **Interactive Dashboard Visualizations** `src/CRM-and-Sales-Pipelines.twbx` Tableau workbook containing interactive dashboards that visualize sales pipeline performance, revenue forecasting, regional analysis, and product-market insights. This resource provides stakeholders with dynamic, real-time access to critical business metrics.
+
+-  **Clean Dataset for Analysis** `src/CRM-and-Sales-Pipelines_cleaned.csv` The processed and cleaned CRM dataset with standardized column names, handled missing values, and proper data types. This 3,000-record dataset serves as the foundation for all analytical workflows and business intelligence reporting.
+
+-  **Analytical Documentation** `src/sales_pipeline_analysis.md` Detailed markdown documentation showcasing the complete analytical process, including data exploration results, key findings, statistical summaries, and business insights. This resource provides a comprehensive overview of methodology and conclusions from the CRM sales pipeline analysis.
