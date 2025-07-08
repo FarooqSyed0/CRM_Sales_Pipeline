@@ -1,4 +1,4 @@
-# CRM Sales Pipeline Analysis
+<h1 align="center">CRM Sales Pipeline Analysis</h1>
 
 **Business Problem:** Analyzed 3,000+ CRM opportunities to identify sales performance patterns, optimize pipeline management, and provide data-driven insights for revenue growth and strategic decision-making.
 
@@ -12,7 +12,7 @@
 | 🎯 **Performance Benchmarking** What are the actual win rate benchmarks for competitive positioning? | 📊 **5.7% overall win rate** with 100%+ performance variance between markets<br>Netherlands leads at 7.8%, Switzerland trails at 3.8%—enabling targeted improvement strategies |
 | 🌐 **Product-Market Optimization** Which product-market combinations offer the highest revenue potential? | 🚀 **Belgium Services: 10.1% win rate** identified as top performer<br>Product-region analysis reveals specific combinations achieving 75%+ higher win rates than global averages |
 
-## 🛠️ Technologies Used
+<h2 align="center">🛠️ Technologies Used</h2>
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![Tableau](https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=tableau&logoColor=white)
@@ -35,9 +35,13 @@
 ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
 ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
 
+<h2 align="center">🚀 Live Dashboard</h2>
 
-## 🚀 Live Dashboard
-
+<p align="center">
+  <a href="[https://public.tableau.com/app/profile/farooq.syed6811/viz/CaliforniaSaaSStartupGrowthFundingAnalysis_17511350716100/CaliforniaSaaSStartupGrowthFundingAnalysis?publish=yes](https://public.tableau.com/app/profile/farooq.syed6811/viz/CRM-and-Sales-Pipelines/CRMSalesPipelines?publish=yes)">
+    View the Interactive Tableau Dashboard
+  </a>
+</p>
 ![View the Interactive Tableau Dashboard](screenshots/dashboard.png)
 
 ## 🗺️ Project Workflow
