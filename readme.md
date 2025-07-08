@@ -38,7 +38,7 @@
 
 ## 🚀 Live Dashboard
 
-[View the Interactive CRM Analysis Dashboard](#)
+![View the Interactive Tableau Dashboard](screenshots/dashboard.png)
 
 ## 🗺️ Project Workflow
 
