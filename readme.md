@@ -38,11 +38,14 @@
 <h2 align="center">🚀 Live Dashboard</h2>
 
 <p align="center">
-  <a href="[https://public.tableau.com/app/profile/farooq.syed6811/viz/CaliforniaSaaSStartupGrowthFundingAnalysis_17511350716100/CaliforniaSaaSStartupGrowthFundingAnalysis?publish=yes](https://public.tableau.com/app/profile/farooq.syed6811/viz/CRM-and-Sales-Pipelines/CRMSalesPipelines?publish=yes)">
+  <a href="https://public.tableau.com/app/profile/farooq.syed6811/viz/CRM-and-Sales-Pipelines/CRMSalesPipelines?publish=yes">
     View the Interactive Tableau Dashboard
   </a>
 </p>
-![View the Interactive Tableau Dashboard](screenshots/dashboard.png)
+
+<p align="center">
+  <img src="screenshots/dashboard.png" width="600" height="400">
+</p>
 
 ## 🗺️ Project Workflow
 
