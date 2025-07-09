@@ -50,7 +50,7 @@
 
 ## 🗺️ Project Workflow
 
-<img src="./screenshots/workflow.png" alt="Workflow Diagram" width="900">
+<img src="./screenshots/workflow.png" alt="Workflow Diagram" width="1200">
 
 
 ## 📖 Technical Documentation
