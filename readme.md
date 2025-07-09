@@ -66,12 +66,17 @@
 
 ## Supporting Resources
 
--  **CRM Sales Pipeline Analysis** `process.ipynb` A comprehensive Jupyter notebook containing Python code for data cleaning, transformation, and core analytical workflows used to analyze 3,000+ CRM opportunities. This notebook details the complete data processing pipeline, from initial data import through advanced sales performance analytics and visualization.
+- **Business Impact Analysis** `src/impact_questions.ipynb`  
+  Jupyter notebook analyzing pipeline optimization, forecasting, benchmarking, and product-market insights from 867 opportunities.
 
--  **Business Analysis SQL Queries** `src/business_analysis_queries.sql` A collection of SQL queries designed to extract key business insights from CRM data, including pipeline snapshots, sales forecasting, closure time analysis, win rate calculations, and product-region performance metrics. These queries support strategic decision-making and operational optimization.
+- **Data Cleaning** `src/data_cleaning.ipynb`  
+  Notebook for deduplication, missing-value handling, type conversion, and standardization of the 3,000-record CRM dataset.
 
--  **Interactive Dashboard Visualizations** `src/CRM-and-Sales-Pipelines.twbx` Tableau workbook containing interactive dashboards that visualize sales pipeline performance, revenue forecasting, regional analysis, and product-market insights. This resource provides stakeholders with dynamic, real-time access to critical business metrics.
+- **SQL Queries** `src/business_analysis_queries.sql`  
+  Queries for pipeline snapshots, sales forecasts, closure-time analysis, win-rate calculations, and regional performance.
 
--  **Clean Dataset for Analysis** `src/CRM-and-Sales-Pipelines_cleaned.csv` The processed and cleaned CRM dataset with standardized column names, handled missing values, and proper data types. This 3,000-record dataset serves as the foundation for all analytical workflows and business intelligence reporting.
+- **Dashboard Visualizations** `src/CRM-and-Sales-Pipelines.twbx`  
+  Tableau workbook with interactive dashboards for pipeline health, revenue forecasts, and market/product analysis.
 
--  **Analytical Documentation** `src/sales_pipeline_analysis.md` Detailed markdown documentation showcasing the complete analytical process, including data exploration results, key findings, statistical summaries, and business insights. This resource provides a comprehensive overview of methodology and conclusions from the CRM sales pipeline analysis.
+- **Clean Dataset** `src/CRM-and-Sales-Pipelines_cleaned.csv`  
+  The processed CRM dataset—standardized, cleaned, and ready for analytics.
