@@ -45,12 +45,12 @@
 </p>
 
 <p align="center">
-  <img src="screenshots/dashboard.png" width="600" height="400">
+  <img src="screenshots/dashboard.png" width="1200" height="800">
 </p>
 
 ## 🗺️ Project Workflow
 
-<img src="./screenshots/workflow.png" alt="Workflow Diagram" width="1200">
+<img src="./screenshots/workflow.png" alt="Workflow Diagram" width="1200" height="800">
 
 
 ## 📖 Technical Documentation
