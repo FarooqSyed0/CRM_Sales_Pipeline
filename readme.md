@@ -2,7 +2,7 @@
 
 **Business Problem:** Analyzed 2,000+ CRM opportunities to identify sales performance patterns, optimize pipeline management, and provide data-driven insights for revenue growth and strategic decision-making.
 
-## Business Impact Questions \& Results
+<h2 align="center">📈 Business Impact Questions & Results</h2>
 
 | Question | Key Result |
 |--|--|
@@ -48,12 +48,13 @@
   <img src="screenshots/dashboard.png" width="1200" height="800">
 </p>
 
-## 🗺️ Project Workflow
+<h2 align="center">🗺️ Project Workflow</h2>
+
 
 <img src="./screenshots/workflow.png" alt="Workflow Diagram" width="1200" height="800">
 
 
-## 📖 Technical Documentation
+<h2 align="center">📖 Technical Documentation</h2>
 
 | <img src="./screenshots/sql_business_question.png" alt="SQL Business Question" width="500"><br><b>SQL Business Question</b> | <img src="./screenshots/win_rates.png" alt="Win Rates" width="500"><br><b>Win Rates</b> |
 |-----------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
