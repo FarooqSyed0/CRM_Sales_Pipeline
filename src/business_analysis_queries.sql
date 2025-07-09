@@ -33,7 +33,7 @@ GROUP BY 1
 ORDER BY 1;
 
 --------------------------------------------------------------------------------
--- Actual Win Rates: Global and by country
+-- Actual Win Rates: by country
 --------------------------------------------------------------------------------
 -- Overall win rate
 SELECT
@@ -51,7 +51,7 @@ GROUP BY country
 ORDER BY win_rate_pct DESC;
 
 --------------------------------------------------------------------------------
--- Win Rates by Product and Region
+-- Win Rates by Product
 --------------------------------------------------------------------------------
 SELECT
   country,
