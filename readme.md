@@ -34,6 +34,7 @@
 ![Seaborn](https://img.shields.io/badge/Seaborn-444876?style=for-the-badge&logo=seaborn&logoColor=white)
 ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
 ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
+[![Matplotlib](https://img.shields.io/badge/MATPLOTLIB-3776AB?style=for-the-badge&logo=matplotlib&logoColor=white)](https://matplotlib.org/)
 
 <h2 align="center">🚀 Live Dashboard</h2>
 
