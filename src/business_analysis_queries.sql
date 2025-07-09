@@ -1,5 +1,5 @@
 --------------------------------------------------------------------------------
--- 1. Pipeline Snapshot: Count and percentage by status and stage
+-- Pipeline Snapshot: Count and percentage by status and stage
 --------------------------------------------------------------------------------
 -- Total opportunities by status
 SELECT
@@ -21,7 +21,7 @@ GROUP BY stage
 ORDER BY count DESC;
 
 --------------------------------------------------------------------------------
--- 2. Sales Forecast: Weighted revenue by month
+-- Sales Forecast: Weighted revenue by month
 --------------------------------------------------------------------------------
 SELECT
   DATE_TRUNC('month', expected_close_date) AS month,
@@ -33,28 +33,7 @@ GROUP BY 1
 ORDER BY 1;
 
 --------------------------------------------------------------------------------
--- 3. Opportunity Closure Time: Average and median days to close by country
---------------------------------------------------------------------------------
--- Compute days to close per won deal
-WITH won_deals AS (
-  SELECT
-    country,
-    DATEDIFF(day, created_date, actual_close_date) AS days_to_close
-  FROM opportunities
-  WHERE status = 'Customer'
-    AND actual_close_date IS NOT NULL
-)
-SELECT
-  country,
-  COUNT(*) AS deals_closed,
-  ROUND(AVG(days_to_close), 1) AS avg_days,
-  PERCENTILE_CONT(0.5) WITHIN GROUP (ORDER BY days_to_close) AS median_days
-FROM won_deals
-GROUP BY country
-ORDER BY avg_days;
-
---------------------------------------------------------------------------------
--- 4. Actual Win Rates: Global and by country
+-- Actual Win Rates: Global and by country
 --------------------------------------------------------------------------------
 -- Overall win rate
 SELECT
@@ -72,7 +51,7 @@ GROUP BY country
 ORDER BY win_rate_pct DESC;
 
 --------------------------------------------------------------------------------
--- 5. Win Rates by Product and Region
+-- Win Rates by Product and Region
 --------------------------------------------------------------------------------
 SELECT
   country,
