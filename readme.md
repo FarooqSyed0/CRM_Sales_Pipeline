@@ -1,16 +1,16 @@
 <h1 align="center">CRM Sales Pipeline Analysis</h1>
 
-**Business Problem:** Analyzed 3,000+ CRM opportunities to identify sales performance patterns, optimize pipeline management, and provide data-driven insights for revenue growth and strategic decision-making.
+**Business Problem:** Analyzed 2,000+ CRM opportunities to identify sales performance patterns, optimize pipeline management, and provide data-driven insights for revenue growth and strategic decision-making.
 
 ## Business Impact Questions \& Results
 
 | Question | Key Result |
-| :-- | :-- |
-| 📊 **Pipeline Optimization** What does my current sales pipeline look like and how can it be optimized? | 🏆 **2,652 active opportunities identified** across seven pipeline stages<br>28.9% concentrated in "Opportunity" stage—providing clear visibility into conversion potential and resource allocation needs |
-| 📈 **Revenue Forecasting** What is the sales forecast accuracy for strategic planning? | 💰 **\$2.2M average monthly weighted revenue** projections established<br>Average deal size: **\$2,758** with progressive growth from \$138K (Q1) to \$930K (Q4) enabling data-driven revenue planning |
-| ⏱️ **Sales Cycle Optimization** How do regional sales cycles impact cash flow and operational efficiency? | 📍 **62.1 days average closure time** with 14.6% variance across markets<br>Germany fastest at 56.9 days, Italy slowest at 65.2 days—providing critical insights for working capital management |
-| 🎯 **Performance Benchmarking** What are the actual win rate benchmarks for competitive positioning? | 📊 **5.7% overall win rate** with 100%+ performance variance between markets<br>Netherlands leads at 7.8%, Switzerland trails at 3.8%—enabling targeted improvement strategies |
-| 🌐 **Product-Market Optimization** Which product-market combinations offer the highest revenue potential? | 🚀 **Belgium Services: 10.1% win rate** identified as top performer<br>Product-region analysis reveals specific combinations achieving 75%+ higher win rates than global averages |
+|--|--|
+| 📊 **Pipeline Optimization** What does my current sales pipeline look like and how can it be optimized? | 🏆 **867 active opportunities** identified across the sales pipeline<br>**28.9%** of all records are in "Opportunity" stage—providing clear visibility into conversion potential and resource allocation needs<br>Top markets: Italy (173), Germany (124) |
+| 📈 **Revenue Forecasting** What is the sales forecast accuracy for strategic planning? | 💰 **$2.3M total opportunity value** in current pipeline<br>Progressive quarterly growth pattern from Q1 to Q4 based on expected close dates<br>Transparent gross pipeline approach enables data-driven revenue planning without probability weighting |
+| 🎯 **Performance Benchmarking** What are the actual win rate benchmarks for competitive positioning? | 📊 **9.6% overall win rate** with significant performance variance between markets<br>**Belgium** leads at 16.9%, followed by Germany (10.5%) and Italy (10.4%)<br>**83 total wins** across all opportunities—enabling targeted improvement strategies |
+| 🧩 **Product-Market Optimization** Which product-market combinations offer the highest revenue potential? | 🚀 **SAAS: $961K** identified as top revenue opportunity<br>**Services: $847K** and **Custom solution: $488K** complete the product portfolio<br>Three active products represent concentrated opportunity focus for sales prioritization |
+
 
 <h2 align="center">🛠️ Technologies Used</h2>
 
@@ -34,6 +34,7 @@
 ![Seaborn](https://img.shields.io/badge/Seaborn-444876?style=for-the-badge&logo=seaborn&logoColor=white)
 ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
 ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
+[![Matplotlib](https://img.shields.io/badge/MATPLOTLIB-3776AB?style=for-the-badge&logo=matplotlib&logoColor=white)](https://matplotlib.org/)
 
 <h2 align="center">🚀 Live Dashboard</h2>
 
