@@ -57,7 +57,7 @@
 
 | <img src="./screenshots/sql_business_question.png" alt="SQL Business Question" width="500"><br><b>SQL Business Question</b> | <img src="./screenshots/win_rates.png" alt="Win Rates" width="500"><br><b>Win Rates</b> |
 |-----------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
-| <img src="./screenshots/forecast.png" alt="Forecast" width="500"><br><div align="center"><b>Forecast</b></div>               | <img src="./screenshots/opps_stage.png" alt="Opportunity Stage" width="500"><br><div align="center"><b>Opportunity Stage</b></div> |
+| <img src="./screenshots/forecast.png" alt="Forecast" width="500"><br><div align="center"><b>Forecast</b></div>               | <img src="./screenshots/no_opps.png" alt="Number of Opportunities" width="500"><br><div align="center"><b>Number of Opportunities</b></div> |
 
 
 
