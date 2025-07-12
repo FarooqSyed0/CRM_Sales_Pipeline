@@ -31,11 +31,15 @@
 ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
 ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
 ![Apple Numbers](https://img.shields.io/badge/NUMBERS-27C93F?style=for-the-badge&logo=apple&logoColor=white)
+![Presenti.ai](https://img.shields.io/badge/Presenti.ai-blueviolet?style=for-the-badge)
 ![Seaborn](https://img.shields.io/badge/Seaborn-444876?style=for-the-badge&logo=seaborn&logoColor=white)
 ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
 ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
 [![Matplotlib](https://img.shields.io/badge/MATPLOTLIB-3776AB?style=for-the-badge&logo=matplotlib&logoColor=white)](https://matplotlib.org/)
 <img src="https://img.shields.io/badge/PLOTLY-3F4F75?style=flat&logo=plotly&logoColor=white" width="98" height="80" />
+
+
+
 
 
 
