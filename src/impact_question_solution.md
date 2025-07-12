@@ -2,7 +2,7 @@
 
 ## Q: How can we optimize our sales pipeline across countries?
 - Focus sales and marketing on Italy, the largest opportunity market (173 opportunities, 27.9% rate).
-- Share best practices from high-conversion countries like Germany and France across all teams.
+- Share best practices from high-conversion countries like Germany across all teams.
 - Tailor pipeline strategies for each country based on their opportunity profiles.
 
 ## Q: How can we improve revenue forecasting accuracy?
