@@ -1,13 +1,8 @@
-<img src="https://r2cdn.perplexity.ai/pplx-full-logo-primary-dark%402x.png" class="logo" width="120"/>
-
-# create md code
-
-```markdown
 # Strategic Business Solutions
 
 ## Q: How can we optimize our sales pipeline across countries?
 - Focus sales and marketing on Italy, the largest opportunity market (173 opportunities, 27.9% rate).
-- Share best practices from high-conversion countries like Germany and France across all teams.
+- Share best practices from high-conversion countries like Germany across all teams.
 - Tailor pipeline strategies for each country based on their opportunity profiles.
 
 ## Q: How can we improve revenue forecasting accuracy?
@@ -30,9 +25,3 @@
 ## Conclusion
 
 By prioritizing high-opportunity markets, leveraging best practices, refining forecasting, and focusing on top-performing products, the business can accelerate growth and outperform competitors. These targeted, actionable strategies will drive revenue, improve forecasting accuracy, and strengthen market position—delivering the results hiring managers want to see.
-```
-
-<div style="text-align: center">⁂</div>
-
-[^1]: impact_questions.ipynb
-
