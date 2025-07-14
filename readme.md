@@ -47,7 +47,7 @@
 <h2 align="center">🚀 Live Dashboard</h2>
 
 <p align="center">
-  <a href="https://public.tableau.com/app/profile/farooq.syed6811/viz/CRM-and-Sales-Pipelines/CRMSalesPipelines?publish=yes">
+  <a href="https://public.tableau.com/app/profile/farooq.syed6811/viz/CRM-and-Sales-Pipelines/CRMSalesPipelines_1?publish=yes">
     View the Interactive Tableau Dashboard
   </a>
 </p>
