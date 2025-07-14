@@ -1,0 +1,1476 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>Business Impact Analysis & Strategic Solutions</title>
+
+    <!-- Reveal.js core styles -->
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/black.css" id="theme" />
+    <!-- You can change 'black' to 'white', 'simple', etc. -->
+
+    <!-- Theme for syntax highlighting (not strictly needed for your current content, but good to keep) -->
+    <link
+      rel="stylesheet"
+      href="plugin/highlight/monokai.css"
+      id="highlight-theme"
+    />
+
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- Tailwind CSS (for your existing utility classes) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts for Inter and Playfair Display -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Your custom CSS from the previous version, adapted for Reveal.js -->
+    <style>
+      /* General body styles are mostly handled by Reveal.js, but keeping font family */
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+
+      /* Reveal.js slides are <section> elements. We'll apply your slide-container styles to them. */
+      /* Note: Reveal.js handles centering and background, so some original styles are simplified. */
+      .reveal .slides section {
+        background-color: #ffffff;
+        border-radius: 2rem; /* More rounded corners */
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1); /* Softer, larger shadow */
+        padding: 3.5rem; /* Increased padding */
+        width: 90%; /* Adjusted width for Reveal.js layout */
+        max-width: 900px; /* Slightly wider slides */
+        min-height: 550px; /* Adjusted height */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        margin: 0 auto; /* Center the slide container */
+      }
+      .reveal .slides section:hover {
+        transform: translateY(-5px); /* Subtle lift on hover */
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+      }
+      .slide-content {
+        width: 100%;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: left;
+      }
+      .slide-title-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 2rem;
+        position: relative;
+      }
+      .slide-title {
+        font-family: 'Playfair Display', serif;
+        font-size: 3rem;
+        font-weight: 700;
+        color: #2c3e50;
+        margin: 0;
+        letter-spacing: -0.02em;
+        text-align: center;
+        flex-grow: 1;
+      }
+      .slide-title-icon {
+        font-size: 2.5rem;
+        color: #6a0dad;
+        margin-left: 1.5rem;
+        flex-shrink: 0;
+      }
+      @media (max-width: 768px) {
+        .slide-title-icon {
+          font-size: 1.8rem;
+          margin-left: 1rem;
+        }
+        .slide-title {
+          font-size: 2.2rem;
+        }
+        .reveal .slides section {
+          padding: 2rem;
+          min-height: 400px;
+        }
+      }
+
+      .slide-subtitle {
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: #5d6d7e;
+        margin-bottom: 2.5rem;
+        width: 100%;
+        text-align: center;
+      }
+      .section-title {
+        font-size: 2rem;
+        font-weight: 600;
+        color: #34495e;
+        margin-bottom: 1.2rem;
+        border-bottom: 2px solid #ecf0f1;
+        padding-bottom: 0.5rem;
+      }
+      .list-item {
+        font-size: 1.2rem;
+        color: #4a5568;
+        margin-bottom: 0.7rem;
+        line-height: 1.7;
+        display: flex;
+        align-items: flex-start;
+        list-style-type: none;
+      }
+      ul.list-disc {
+        list-style-type: none;
+        padding-left: 0;
+      }
+      ul.list-disc li {
+        padding-left: 0;
+        position: relative;
+      }
+      ol.list-decimal {
+        list-style-type: decimal;
+        padding-left: 1.5rem;
+      }
+      ol.list-decimal li {
+        position: relative;
+        margin-bottom: 0.7rem;
+      }
+
+      .list-item i {
+        margin-right: 1rem;
+        color: #3498db;
+        font-size: 1.4rem;
+        flex-shrink: 0;
+        padding-top: 0.2rem;
+      }
+      /* Speaker notes are handled by Reveal.js's <aside class="notes"> */
+      .chart-image {
+        max-width: 90%;
+        height: auto;
+        border-radius: 1rem;
+        margin-top: 2rem;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        border: 1px solid #e0e6ed;
+      }
+
+      /* New styles for Problem, Solutions, Value format */
+      .psv-header {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin-bottom: 1.5rem;
+      }
+      .psv-header-column {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .psv-header-icon {
+        font-size: 4.5rem;
+        margin-bottom: 0.5rem;
+      }
+      .psv-header-title {
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: #2c3e50;
+      }
+
+      /* Specific colors for PSV sections - Made more vibrant */
+      .psv-problem .psv-header-icon {
+        color: #d63031;
+      }
+      .psv-solutions .psv-header-icon {
+        color: #ffc107;
+      }
+      .psv-value .psv-header-icon {
+        color: #28a745;
+      }
+
+      .psv-content-container {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        gap: 2rem;
+      }
+      .psv-content-column {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        padding: 1.5rem;
+        border-radius: 1rem;
+        background-color: #fcfdff;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      }
+      .psv-content-item {
+        font-size: 1.05rem;
+        color: #5d6d7e;
+        line-height: 1.5;
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: flex-start;
+      }
+      .psv-content-item:last-child {
+        margin-bottom: 0;
+      }
+      .psv-content-item i {
+        margin-right: 0.75rem;
+        font-size: 1.1rem;
+        flex-shrink: 0;
+        padding-top: 0.2rem;
+        color: #3498db;
+      }
+
+      /* Horizontal Bar Chart Styles for Slide 2 */
+      .horizontal-bar-chart-container {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        max-width: 700px;
+        margin-top: 2rem;
+        padding: 1.5rem;
+        background-color: #f8f9fa;
+        border-radius: 1rem;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      }
+      .horizontal-chart-title {
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: #2c3e50;
+        margin-bottom: 1.5rem;
+        text-align: center;
+      }
+      .bar-row {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+        position: relative;
+        height: 40px;
+      }
+      .bar-label {
+        width: 150px;
+        font-size: 1.1rem;
+        font-weight: 500;
+        color: #4a5568;
+        text-align: right;
+        margin-right: 1.5rem;
+      }
+      .bar-wrapper {
+        flex-grow: 1;
+        background-color: #e0e0e0;
+        border-radius: 0.5rem;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+      }
+      .horizontal-bar {
+        height: 100%;
+        border-radius: 0.5rem;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 1rem;
+        color: white;
+        font-weight: 600;
+        font-size: 1rem;
+        transition: width 0.5s ease-out;
+        position: relative;
+      }
+      .bar-value {
+        position: absolute;
+        right: 1rem;
+        color: white;
+        font-weight: 600;
+        font-size: 1rem;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+      }
+      .bar-percentage {
+        width: 60px;
+        font-size: 1.1rem;
+        font-weight: 500;
+        color: #4a5568;
+        margin-left: 1.5rem;
+        text-align: left;
+      }
+      /* Specific bar colors */
+      .bar-color-1 {
+        background-color: #ef5350;
+      }
+      .bar-color-2 {
+        background-color: #4caf50;
+      }
+      .bar-color-3 {
+        background-color: #2196f3;
+      }
+      .bar-color-4 {
+        background-color: #ffc107;
+      }
+      .bar-color-5 {
+        background-color: #9c27b0;
+      }
+      .bar-color-6 {
+        background-color: #00bcd4;
+      }
+      .bar-color-7 {
+        background-color: #795548;
+      }
+
+      .chart-summary-text {
+        font-size: 1.1rem;
+        font-weight: 500;
+        color: #4a5568;
+        margin-top: 1.5rem;
+        text-align: center;
+        padding: 0 1rem;
+      }
+
+      /* Line Chart Styles for Slide 3 */
+      .line-chart-container {
+        width: 90%;
+        max-width: 800px;
+        margin-top: 2rem;
+        padding: 1.5rem;
+        background-color: #f8f9fa;
+        border-radius: 1rem;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 350px;
+      }
+      .line-chart-title {
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: #2c3e50;
+        margin-bottom: 1.5rem;
+        text-align: center;
+      }
+      .line-chart-canvas {
+        width: 100%;
+        height: 100%;
+        background-color: #ffffff;
+        border-radius: 0.5rem;
+        box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05);
+      }
+
+      /* Circular Win Rate Chart Styles for Slide 4 */
+      .circular-chart-container {
+        width: 90%;
+        max-width: 600px;
+        margin-top: 2rem;
+        padding: 1.5rem;
+        background-color: #f8f9fa;
+        border-radius: 1rem;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .circular-chart-title {
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: #2c3e50;
+        margin-bottom: 1.5rem;
+        text-align: center;
+      }
+      .circular-chart-canvas {
+        width: 100%;
+        height: 300px;
+        background-color: #ffffff;
+        border-radius: 0.5rem;
+        box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05);
+      }
+      .chart-legend {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem 2rem;
+        margin-top: 1.5rem;
+        width: 100%;
+        padding: 0 1rem;
+      }
+      .legend-item {
+        display: flex;
+        align-items: center;
+        font-size: 1rem;
+        color: #4a5568;
+        font-weight: 500;
+      }
+      .legend-color-box {
+        width: 20px;
+        height: 20px;
+        border-radius: 0.4rem;
+        margin-right: 0.75rem;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Vertical Bar Chart Styles for Slide 5 */
+      .vertical-bar-chart-container {
+        width: 90%;
+        max-width: 700px;
+        margin-top: 2rem;
+        padding: 1.5rem;
+        background-color: #f8f9fa;
+        border-radius: 1rem;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .vertical-bar-chart-title {
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: #2c3e50;
+        margin-bottom: 1.5rem;
+        text-align: center;
+      }
+      .vertical-bar-chart-canvas {
+        width: 100%;
+        height: 350px;
+        background-color: #ffffff;
+        border-radius: 0.5rem;
+        box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05);
+      }
+
+      /* Funnel Chart Styles for Slide 6 */
+      .funnel-chart-container {
+        width: 90%;
+        max-width: 600px;
+        margin-top: 2rem;
+        padding: 1.5rem;
+        background-color: #f8f9fa;
+        border-radius: 1rem;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .funnel-chart-title {
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: #2c3e50;
+        margin-bottom: 1.5rem;
+        text-align: center;
+      }
+      .funnel-chart-canvas {
+        width: 100%;
+        height: 400px;
+        background-color: #ffffff;
+        border-radius: 0.5rem;
+        box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05);
+      }
+
+      /* Responsive adjustments for charts */
+      @media (max-width: 768px) {
+        .horizontal-bar-chart-container,
+        .line-chart-container,
+        .circular-chart-container,
+        .vertical-bar-chart-container,
+        .funnel-chart-container {
+          width: 100%;
+          padding: 1rem;
+        }
+        .horizontal-chart-title,
+        .line-chart-title,
+        .circular-chart-title,
+        .vertical-bar-chart-title,
+        .funnel-chart-title {
+          font-size: 1.5rem;
+        }
+        .bar-label {
+          width: 100px;
+          font-size: 1rem;
+          margin-right: 1rem;
+        }
+        .bar-value {
+          font-size: 0.9rem;
+          right: 0.5rem;
+        }
+        .bar-percentage {
+          width: 50px;
+          font-size: 1rem;
+          margin-left: 1rem;
+        }
+        .chart-summary-text {
+          font-size: 0.95rem;
+        }
+        .psv-header {
+          flex-direction: column;
+          margin-bottom: 1rem;
+        }
+        .psv-header-column {
+          margin-bottom: 1rem;
+        }
+        .psv-header-icon {
+          font-size: 3.5rem;
+        }
+        .psv-header-title {
+          font-size: 1.5rem;
+        }
+        .psv-content-container {
+          flex-direction: column;
+          gap: 1.5rem;
+        }
+        .psv-content-column {
+          padding: 1rem;
+        }
+        .psv-content-item {
+          font-size: 0.95rem;
+        }
+        .line-chart-canvas,
+        .vertical-bar-chart-canvas,
+        .funnel-chart-canvas {
+          height: 250px;
+        }
+        .line-chart-container,
+        .vertical-bar-chart-container,
+        .funnel-chart-container {
+          min-height: 300px;
+        }
+        .circular-chart-canvas {
+          height: 250px;
+        }
+        .chart-legend {
+          flex-direction: column;
+          gap: 0.5rem;
+          align-items: flex-start;
+          padding: 0.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <!-- Slide 1: Introduction & Overview -->
+        <section>
+          <div class="slide-content">
+            <h1 class="slide-title">Understanding Business Landscape</h1>
+            <div class="w-full">
+              <h2 class="section-title">Content:</h2>
+              <ul class="list-disc pl-6">
+                <li class="list-item">
+                  <i class="fa-solid fa-bullseye"></i>
+                  <strong>Purpose:</strong> To analyze current business
+                  performance and identify areas for strategic improvement.
+                </li>
+                <li class="list-item">
+                  <i class="fa-solid fa-chart-pie"></i>
+                  <strong>Key Focus Areas:</strong>
+                </li>
+                <ul class="list-disc pl-6">
+                  <li class="list-item">
+                    <i class="fa-solid fa-funnel-dollar"></i> Sales Pipeline
+                    Optimization
+                  </li>
+                  <li class="list-item">
+                    <i class="fa-solid fa-chart-line"></i> Revenue Forecasting
+                    Accuracy
+                  </li>
+                  <li class="list-item">
+                    <i class="fa-solid fa-trophy"></i> Performance Benchmarking
+                    for Competitive Positioning
+                  </li>
+                  <li class="list-item">
+                    <i class="fa-solid fa-lightbulb"></i> Product-Market
+                    Optimization
+                  </li>
+                </ul>
+              </ul>
+            </div>
+          </div>
+          <aside class="notes">
+            Today, we'll analyze business performance across sales pipeline,
+            revenue forecasting, competitive benchmarking, and product-market
+            fit to identify strategic improvement areas.
+          </aside>
+        </section>
+
+        <!-- Slide 2: Sales Pipeline Optimization -->
+        <section>
+          <div class="slide-content">
+            <h1 class="slide-title">
+              Optimizing Sales Pipeline Across Countries
+            </h1>
+            <h2 class="section-title">
+              Question: What does current sales pipeline look like and how can
+              it be optimized?
+            </h2>
+            <div class="w-full">
+              <h2 class="section-title">Key Findings:</h2>
+              <ul class="list-disc pl-6">
+                <li class="list-item">
+                  <i class="fa-solid fa-sack-dollar"></i> Total Opportunities:
+                  867 (28.9% of all records)
+                </li>
+                <li class="list-item">
+                  <i class="fa-solid fa-globe"></i> Top 3 Countries by
+                  Opportunities:
+                </li>
+                <ul class="list-disc pl-6">
+                  <li class="list-item">
+                    Italy: 173 opportunities (27.9% of total records for Italy)
+                  </li>
+                  <li class="list-item">
+                    Germany: 124 opportunities (29.5% of total records for
+                    Germany)
+                  </li>
+                  <li class="list-item">
+                    France: 123 opportunities (29.1% of total records for
+                    France)
+                  </li>
+                </ul>
+              </ul>
+            </div>
+
+            <!-- Horizontal Bar Chart for Slide 2 -->
+            <div class="horizontal-bar-chart-container">
+              <div class="horizontal-chart-title">
+                Top 3 Countries by Pipeline Opportunities
+              </div>
+              <div class="bar-row">
+                <div class="bar-label">Italy</div>
+                <div class="bar-wrapper">
+                  <div
+                    class="horizontal-bar bar-color-1"
+                    style="width: calc((173 / 173) * 90%)"
+                  >
+                    <span class="bar-value">173</span>
+                  </div>
+                </div>
+                <div class="bar-percentage">27.9%</div>
+              </div>
+              <div class="bar-row">
+                <div class="bar-label">Germany</div>
+                <div class="bar-wrapper">
+                  <div
+                    class="horizontal-bar bar-color-2"
+                    style="width: calc((124 / 173) * 90%)"
+                  >
+                    <span class="bar-value">124</span>
+                  </div>
+                </div>
+                <div class="bar-percentage">29.5%</div>
+              </div>
+              <div class="bar-row">
+                <div class="bar-label">France</div>
+                <div class="bar-wrapper">
+                  <div
+                    class="horizontal-bar bar-color-3"
+                    style="width: calc((123 / 173) * 90%)"
+                  >
+                    <span class="bar-value">123</span>
+                  </div>
+                </div>
+                <div class="bar-percentage">29.1%</div>
+              </div>
+              <p class="chart-summary-text">
+                These 3 markets represent **48%** of total 867 opportunities,
+                with Italy leading as primary growth market.
+              </p>
+            </div>
+          </div>
+          <aside class="notes">
+            sales pipeline has 867 opportunities. Italy, Germany, and France are
+            top 3 opportunity-rich markets, suggesting focused efforts here will
+            yield significant returns.
+          </aside>
+        </section>
+
+        <!-- Slide 3: Revenue Forecasting: Quarterly Sales -->
+        <section>
+          <div class="slide-content">
+            <h1 class="slide-title">
+              Sales Forecast Based on Expected Close Date (Quarterly)
+            </h1>
+            <h2 class="section-title">
+              Question: What is the sales forecast based on expected close
+              dates?
+            </h2>
+            <div class="w-full">
+              <h2 class="section-title">Key Findings:</h2>
+              <ul class="list-disc pl-6">
+                <li class="list-item">
+                  <i class="fa-solid fa-chart-area"></i> Identified clear trends
+                  in expected sales performance across quarters.
+                </li>
+                <li class="list-item">
+                  <i class="fa-solid fa-arrow-trend-up"></i> Observed periods of
+                  significant growth, **followed by anticipated
+                  adjustments/decreases.**
+                </li>
+                <li class="list-item">
+                  <i class="fa-solid fa-eye"></i> Forecast provides a high-level
+                  view crucial for strategic resource allocation.
+                </li>
+              </ul>
+            </div>
+
+            <!-- Line Chart for Slide 3 -->
+            <div class="line-chart-container">
+              <div class="line-chart-title">
+                Sales Forecast Based on Expected Close Date
+              </div>
+              <canvas id="salesLineChart" class="line-chart-canvas"></canvas>
+            </div>
+          </div>
+          <aside class="notes">
+            This chart illustrates quarterly sales forecast, revealing key
+            trends in expected performance. Understanding these patterns is
+            vital for strategic planning and optimizing resource allocation
+            throughout the year.
+          </aside>
+        </section>
+
+        <!-- Slide 4: Performance Benchmarking -->
+        <section>
+          <div class="slide-content">
+            <h1 class="slide-title">
+              Competitive Positioning: Understanding Win Rates
+            </h1>
+            <h2 class="section-title">
+              Question: What are the actual win rate benchmarks for competitive
+              positioning?
+            </h2>
+            <div class="w-full">
+              <h2 class="section-title">Key Findings:</h2>
+              <ul class="list-disc pl-6">
+                <li class="list-item">
+                  <i class="fa-solid fa-handshake"></i> Total Wins: 83
+                </li>
+                <li class="list-item">
+                  <i class="fa-solid fa-percent"></i> Overall Win Rate: 9.6%
+                  (from 867 opportunities)
+                </li>
+                <li class="list-item">
+                  <i class="fa-solid fa-flag"></i> Top 3 Countries by Wins:
+                </li>
+                <ul class="list-disc pl-6">
+                  <li class="list-item">Italy: 18 wins (10.4% win rate)</li>
+                  <li class="list-item">Germany: 13 wins (10.5% win rate)</li>
+                  <li class="list-item">France: 12 wins (9.8% win rate)</li>
+                </ul>
+                <li class="list-item">
+                  <i class="fa-solid fa-scale-balanced"></i> Comparison to
+                  Industry Benchmarks: 9.6% win rate is significantly below the
+                  B2B SaaS industry benchmark of 15-25%.
+                </li>
+                <li class="list-item">
+                  <i class="fa-solid fa-filter"></i> Funnel Distribution: Strong
+                  lead-to-opportunity conversion (28.9%) but weak
+                  opportunity-to-win conversion (9.6%).
+                </li>
+              </ul>
+            </div>
+
+            <!-- Circular Win Rate Chart for Slide 4 -->
+            <div class="circular-chart-container">
+              <div class="circular-chart-title">
+                Win Rate by Country vs. Overall Benchmark
+              </div>
+              <canvas
+                id="winRateCircularChart"
+                class="circular-chart-canvas"
+              ></canvas>
+              <div class="chart-legend">
+                <div class="legend-item">
+                  <div
+                    class="legend-color-box"
+                    style="background-color: #4bc0c0"
+                  ></div>
+                  Germany: 10.5%
+                </div>
+                <div class="legend-item">
+                  <div
+                    class="legend-color-box"
+                    style="background-color: #ff6384"
+                  ></div>
+                  Italy: 10.4%
+                </div>
+                <div class="legend-item">
+                  <div
+                    class="legend-color-box"
+                    style="background-color: #ffcd56"
+                  ></div>
+                  France: 9.8%
+                </div>
+                <div class="legend-item">
+                  <div
+                    class="legend-color-box"
+                    style="background-color: #2c3e50"
+                  ></div>
+                  Overall: 9.6%
+                </div>
+              </div>
+              <p class="chart-summary-text mt-4">
+                overall win rate of **9.6%** is below industry benchmarks, with
+                individual country performance slightly varying around this
+                figure.
+              </p>
+            </div>
+          </div>
+          <aside class="notes">
+            9.6% win rate is below the 15-25% B2B SaaS benchmark. While we
+            convert leads to opportunities well, opportunity-to-win conversion
+            is weak, indicating a competitive disadvantage in closing deals.
+          </aside>
+        </section>
+
+        <!-- Slide 5: Product-Market Optimization -->
+        <section>
+          <div class="slide-content">
+            <h1 class="slide-title">
+              Prioritizing Products for Maximum Market Impact
+            </h1>
+            <h2 class="section-title">
+              Question: Which products should be prioritized for maximum market
+              impact?
+            </h2>
+            <div class="w-full">
+              <h2 class="section-title">Key Findings:</h2>
+              <ul class="list-disc pl-6">
+                <li class="list-item">
+                  <i class="fa-solid fa-dollar-sign"></i> Total Opportunity
+                  Value by Product.
+                </li>
+                <li class="list-item">
+                  <i class="fa-solid fa-star"></i> **SAAS** is the clear leader
+                  with the highest opportunity value.
+                </li>
+                <li class="list-item">
+                  <i class="fa-solid fa-cubes"></i> **All three products** have
+                  active opportunities in the pipeline.
+                </li>
+              </ul>
+            </div>
+            <!-- Vertical Bar Chart for Slide 5 -->
+            <div class="vertical-bar-chart-container">
+              <div class="vertical-chart-title">
+                Total Opportunity Value by Product
+              </div>
+              <canvas
+                id="productValueBarChart"
+                class="vertical-bar-chart-canvas"
+              ></canvas>
+            </div>
+          </div>
+          <aside class="notes">
+            This chart highlights which products have active opportunities and
+            their value. SAAS is clear leader, representing the largest
+            opportunity for future wins. By prioritizing these three products,
+            can focus efforts where they matter most.
+          </aside>
+        </section>
+
+        <!-- Slide 6: Pipeline Distribution by Status (Funnel Chart) -->
+        <section>
+          <div class="slide-content">
+            <h1 class="slide-title">Pipeline Distribution by Status</h1>
+            <h2 class="section-title">
+              Understanding the Current State of Opportunities
+            </h2>
+            <div class="w-full">
+              <h2 class="section-title">Key Findings:</h2>
+              <ul class="list-disc pl-6">
+                <li class="list-item">
+                  <i class="fa-solid fa-funnel-dollar"></i> **Opportunity** is
+                  the largest segment, indicating a strong top-of-funnel.
+                </li>
+                <li class="list-item">
+                  <i class="fa-solid fa-check-circle"></i> Significant portions
+                  are **Qualified** and **Sales Accepted**, showing progress.
+                </li>
+                <li class="list-item">
+                  <i class="fa-solid fa-times-circle"></i> **Churned Customer**
+                  and **Disqualified** represent areas for analysis to improve
+                  retention and lead qualification.
+                </li>
+              </ul>
+            </div>
+
+            <!-- Funnel Chart for Pipeline Distribution -->
+            <div class="funnel-chart-container">
+              <div class="funnel-chart-title">
+                Pipeline Distribution by Status
+              </div>
+              <canvas
+                id="pipelineDistributionFunnelChart"
+                class="funnel-chart-canvas"
+              ></canvas>
+            </div>
+          </div>
+          <aside class="notes">
+            This slide breaks down the current distribution of our pipeline by
+            status. We can see a strong initial "Opportunity" phase, with good
+            progression into "Qualified" and "Sales Accepted." The data also
+            points to "Churned Customer" and "Disqualified" as areas where we
+            might need to refine our strategies.
+          </aside>
+        </section>
+
+        <!-- Slide 7: Strategic Solutions & Recommendations -->
+        <section>
+          <div class="slide-content">
+            <h1 class="slide-title">Strategic Solutions for Business Growth</h1>
+            <div class="psv-header">
+              <div class="psv-header-column psv-problem">
+                <i class="fa-solid fa-exclamation-triangle psv-header-icon"></i>
+                <h3 class="psv-header-title">Problem</h3>
+              </div>
+              <div class="psv-header-column psv-solutions">
+                <i class="fa-solid fa-lightbulb psv-header-icon"></i>
+                <h3 class="psv-header-title">Solutions</h3>
+              </div>
+              <div class="psv-header-column psv-value">
+                <i class="fa-solid fa-chart-line psv-header-icon"></i>
+                <h3 class="psv-header-title">Value</h3>
+              </div>
+            </div>
+
+            <div class="psv-content-container">
+              <div class="psv-content-column">
+                <p class="psv-content-item has-icon">
+                  <i class="fa-solid fa-circle-xmark"></i> Sales pipeline not
+                  fully optimized in key markets.
+                </p>
+                <p class="psv-content-item has-icon">
+                  <i class="fa-solid fa-percent"></i> Win rate (9.6%) below
+                  industry benchmarks (15-25%).
+                </p>
+                <p class="psv-content-item has-icon">
+                  <i class="fa-solid fa-sitemap"></i> Resources diffused, not
+                  capitalizing on high-potential products.
+                </p>
+              </div>
+              <div class="psv-content-column">
+                <p class="psv-content-item has-icon">
+                  <i class="fa-solid fa-gears"></i> Focus sales/marketing on top
+                  3 countries; implement targeted conversion strategies.
+                </p>
+                <p class="psv-content-item has-icon">
+                  <i class="fa-solid fa-graduation-cap"></i> Invest in sales
+                  process optimization, training, and competitive positioning.
+                </p>
+                <p class="psv-content-item has-icon">
+                  <i class="fa-solid fa-bullseye"></i> Prioritize
+                  sales/marketing for 3 active opportunity products; develop
+                  specific go-to-market strategies.
+                </p>
+              </div>
+              <div class="psv-content-column">
+                <p class="psv-content-item has-icon">
+                  <i class="fa-solid fa-dollar-sign"></i> Maximize conversion
+                  and revenue from high-potential markets, **projecting a 15-20%
+                  increase in qualified leads.**
+                </p>
+                <p class="psv-content-item has-icon">
+                  <i class="fa-solid fa-arrow-trend-up"></i> Increase closed
+                  deals, improve competitive standing, and boost sales
+                  efficiency, **targeting a 5-8% uplift in overall win rate.**
+                </p>
+              </div>
+            </div>
+          </div>
+          <aside class="notes">
+            To summarize, we've identified key challenges in sales pipeline, win
+            rates, and product focus. proposed solutions aim to optimize efforts
+            in top markets, enhance closing capabilities, and strategically
+            align resources with high-potential products, ultimately driving
+            significant business growth and improving competitive position.
+          </aside>
+        </section>
+      </div>
+    </div>
+
+    <!-- Reveal.js core JavaScript -->
+    <script src="dist/reveal.js"></script>
+
+    <!-- Reveal.js plugins -->
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/math/math.js"></script>
+
+    <script>
+      // Helper functions for color manipulation (lighten/darken)
+      function toHex(c) {
+        var hex = Math.round(c).toString(16);
+        return hex.length === 1 ? '0' + hex : hex;
+      }
+
+      function hexToRgb(hex) {
+        var r = parseInt(hex.slice(1, 3), 16);
+        var g = parseInt(hex.slice(3, 5), 16);
+        var b = parseInt(hex.slice(5, 7), 16);
+        return { r, g, b };
+      }
+
+      function rgbToHex(r, g, b) {
+        return '#' + toHex(r) + toHex(g) + toHex(b);
+      }
+
+      function lightenColor(hex, percent) {
+        var rgb = hexToRgb(hex);
+        var p = percent / 100;
+        var R = rgb.r + (255 - rgb.r) * p;
+        var G = rgb.g + (255 - rgb.g) * p;
+        var B = rgb.b + (255 - rgb.b) * p;
+        return rgbToHex(R, G, B);
+      }
+
+      function darkenColor(hex, percent) {
+        var rgb = hexToRgb(hex);
+        var p = percent / 100;
+        var R = rgb.r * (1 - p);
+        var G = rgb.g * (1 - p);
+        var B = rgb.b * (1 - p);
+        return rgbToHex(R, G, B);
+      }
+
+      // Data for the line chart (Slide 3)
+      const salesData = [
+        { label: '2024 Q1', value: 0.35 },
+        { label: '2024 Q2', value: 1.72 },
+        { label: '2024 Q3', value: 2.12 },
+        { label: '2024 Q4', value: 2.33 },
+        { label: '2025 Q1', value: 1.51 },
+        { label: '2025 Q2', value: 0.25 },
+      ];
+
+      function drawLineChart() {
+        const canvas = document.getElementById('salesLineChart');
+        if (!canvas) return;
+
+        const ctx = canvas.getContext('2d');
+        const parentContainer = canvas.parentElement;
+
+        // Set canvas size to match its container, considering Reveal.js scaling
+        canvas.width = parentContainer.clientWidth;
+        canvas.height = parentContainer.clientHeight;
+
+        const padding = 50;
+        const chartWidth = canvas.width - 2 * padding;
+        const chartHeight = canvas.height - 2 * padding;
+
+        const values = salesData.map((d) => d.value);
+        const maxValue = Math.max(...values);
+        const minValue = Math.min(...values);
+
+        const yAxisMin = minValue > 0 ? minValue * 0.8 : 0;
+        const yAxisMax = maxValue * 1.1;
+
+        const xScale = chartWidth / (salesData.length - 1);
+        const yScale = chartHeight / (yAxisMax - yAxisMin);
+
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        ctx.strokeStyle = '#a0a0a0';
+        ctx.lineWidth = 1.5;
+        ctx.beginPath();
+        ctx.moveTo(padding, canvas.height - padding);
+        ctx.lineTo(canvas.width - padding, canvas.height - padding);
+        ctx.stroke();
+
+        ctx.strokeStyle = '#e0e0e0';
+        ctx.lineWidth = 0.8;
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'top';
+        for (let i = 0; i < salesData.length; i++) {
+          const x = padding + i * xScale;
+          ctx.beginPath();
+          ctx.moveTo(x, padding);
+          ctx.lineTo(x, canvas.height - padding);
+          ctx.stroke();
+
+          ctx.fillStyle = '#5d6d7e';
+          ctx.font = '0.9rem Inter';
+          ctx.fillText(salesData[i].label, x, canvas.height - padding + 10);
+        }
+
+        ctx.beginPath();
+        ctx.strokeStyle = '#3498db';
+        ctx.lineWidth = 4;
+        ctx.lineJoin = 'round';
+        ctx.lineCap = 'round';
+
+        salesData.forEach((point, i) => {
+          const x = padding + i * xScale;
+          const y = padding + chartHeight - (point.value - yAxisMin) * yScale;
+          if (i === 0) {
+            ctx.moveTo(x, y);
+          } else {
+            ctx.lineTo(x, y);
+          }
+        });
+        ctx.stroke();
+
+        ctx.fillStyle = '#2c3e50';
+        ctx.font = '0.9rem Inter';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'bottom';
+
+        salesData.forEach((point, i) => {
+          const x = padding + i * xScale;
+          const y = padding + chartHeight - (point.value - yAxisMin) * yScale;
+
+          ctx.beginPath();
+          ctx.arc(x, y, 5, 0, Math.PI * 2);
+          ctx.fillStyle = '#3498db';
+          ctx.fill();
+          ctx.strokeStyle = '#ffffff';
+          ctx.lineWidth = 2;
+          ctx.stroke();
+
+          ctx.fillStyle = '#2c3e50';
+          ctx.fillText(`$${point.value}M`, x, y - 10);
+        });
+      }
+
+      // Data for the circular chart (Slide 4)
+      let winRateData = [
+        { country: 'Italy', rate: 10.4, color: '#FF6384' },
+        { country: 'Germany', rate: 10.5, color: '#4BC0C0' },
+        { country: 'France', rate: 9.8, color: '#FFCD56' },
+      ];
+      const overallWinRate = 9.6;
+      const overallWinRateColor = '#2c3e50'; // Dark
+
+      // Sort winRateData from highest to lowest rate
+      winRateData.sort((a, b) => b.rate - a.rate);
+
+      function drawWinRateCircularChart() {
+        const canvas = document.getElementById('winRateCircularChart');
+        if (!canvas) return;
+
+        const ctx = canvas.getContext('2d');
+        const parentContainer = canvas.parentElement;
+
+        canvas.width = parentContainer.clientWidth;
+        canvas.height = parentContainer.clientHeight;
+
+        const centerX = canvas.width / 2;
+        const centerY = canvas.height / 2;
+        const barThickness = 25;
+        const spacing = 10; // Space between rings
+
+        // Determine the maximum rate to scale all arcs correctly
+        const allRates = [...winRateData.map((d) => d.rate), overallWinRate];
+        const maxRate = Math.max(...allRates);
+
+        // Calculate radii for each ring, starting from the innermost (overall)
+        // The innermost ring will be for overallWinRate
+        // Then outer rings for sorted countries
+        const baseRadius = Math.min(canvas.width, canvas.height) / 2 - 40; // Max available radius
+        const totalCountryRingsWidth =
+          winRateData.length * barThickness +
+          (winRateData.length - 1) * spacing;
+        const overallRingOffset = barThickness + spacing; // Space for the overall ring inside the country rings
+
+        // The outermost ring will have the `baseRadius`
+        // Subsequent rings move inward
+
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        // Draw country win rate rings (from outermost to innermost)
+        winRateData.forEach((data, i) => {
+          // Calculate radius for each country ring, moving inward from the outermost
+          const radius = baseRadius - i * (barThickness + spacing);
+          const endAngle = (data.rate / maxRate) * 2 * Math.PI;
+
+          // Draw base for country ring
+          ctx.beginPath();
+          ctx.arc(centerX, centerY, radius, 0, 2 * Math.PI);
+          ctx.strokeStyle = '#e0e0e0'; // Light grey base
+          ctx.lineWidth = barThickness;
+          ctx.stroke();
+
+          // Draw actual country win rate arc
+          ctx.beginPath();
+          ctx.arc(centerX, centerY, radius, 0, endAngle);
+          ctx.strokeStyle = data.color;
+          ctx.lineWidth = barThickness;
+          ctx.stroke();
+        });
+
+        // Draw the overall win rate ring (innermost)
+        // Its radius will be smaller than the innermost country ring
+        const overallRingRadius =
+          baseRadius - winRateData.length * (barThickness + spacing);
+        const overallEndAngle = (overallWinRate / maxRate) * 2 * Math.PI;
+
+        // Draw base for overall ring
+        ctx.beginPath();
+        ctx.arc(centerX, centerY, overallRingRadius, 0, 2 * Math.PI);
+        ctx.strokeStyle = '#e0e0e0'; // Light grey base
+        ctx.lineWidth = barThickness;
+        ctx.stroke();
+
+        // Draw actual overall win rate arc
+        ctx.beginPath();
+        ctx.arc(centerX, centerY, overallRingRadius, 0, overallEndAngle);
+        ctx.strokeStyle = overallWinRateColor; // Dark color for overall
+        ctx.lineWidth = barThickness;
+        ctx.stroke();
+
+        // Draw overall win rate text in the very center
+        ctx.fillStyle = '#2c3e50';
+        ctx.font = 'bold 1.5rem Inter';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        ctx.fillText(`Overall: ${overallWinRate}%`, centerX, centerY);
+      }
+
+      // Data for the vertical bar chart (Slide 5)
+      let productValueData = [
+        { product: 'SAAS', value: 961, color: '#4CAF50' }, // Green
+        { product: 'Services', value: 847, color: '#FFC107' }, // Yellow-Orange
+        { product: 'Custom Solution', value: 488, color: '#2196F3' }, // Blue
+      ];
+
+      // Sort product data from highest to lowest value
+      productValueData.sort((a, b) => b.value - a.value);
+
+      function drawProductValueBarChart() {
+        const canvas = document.getElementById('productValueBarChart');
+        if (!canvas) return;
+
+        const ctx = canvas.getContext('2d');
+        const parentContainer = canvas.parentElement;
+
+        canvas.width = parentContainer.clientWidth;
+        canvas.height = parentContainer.clientHeight;
+
+        const padding = 60; // More padding for labels
+        const chartWidth = canvas.width - 2 * padding;
+        const chartHeight = canvas.height - 2 * padding;
+
+        const values = productValueData.map((d) => d.value);
+        const maxValue = Math.max(...values);
+
+        // Calculate scale factors
+        const yScale = chartHeight / (maxValue * 1.1); // 10% buffer above max value
+        const barWidth = chartWidth / (productValueData.length * 1.5); // Space between bars
+        const barSpacing = barWidth / 2;
+
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        // Draw X-axis
+        ctx.strokeStyle = '#a0a0a0';
+        ctx.lineWidth = 1.5;
+        ctx.beginPath();
+        ctx.moveTo(padding, canvas.height - padding);
+        ctx.lineTo(canvas.width - padding, canvas.height - padding);
+        ctx.stroke();
+
+        // Draw Y-axis (optional, but good for context)
+        ctx.beginPath();
+        ctx.moveTo(padding, padding);
+        ctx.lineTo(padding, canvas.height - padding);
+        ctx.stroke();
+
+        // Draw bars
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'bottom';
+        productValueData.forEach((data, i) => {
+          const barHeight = data.value * yScale;
+          const x = padding + i * (barWidth + barSpacing) + barSpacing;
+          const y = canvas.height - padding - barHeight;
+
+          // Draw the bar
+          ctx.fillStyle = data.color;
+          ctx.fillRect(x, y, barWidth, barHeight);
+
+          // Draw value label above the bar
+          ctx.fillStyle = '#2c3e50';
+          ctx.font = 'bold 1rem Inter';
+          ctx.fillText(`$${data.value}K`, x + barWidth / 2, y - 5);
+
+          // Draw product label below the x-axis
+          ctx.fillStyle = '#5d6d7e';
+          ctx.font = '0.9rem Inter';
+          ctx.textBaseline = 'top';
+          ctx.fillText(
+            data.product,
+            x + barWidth / 2,
+            canvas.height - padding + 10
+          );
+          ctx.textBaseline = 'bottom'; // Reset for next value label
+        });
+
+        // Draw Y-axis labels (simplified for clarity)
+        ctx.fillStyle = '#5d6d7e';
+        ctx.font = '0.9rem Inter';
+        ctx.textAlign = 'right';
+        ctx.textBaseline = 'middle';
+        const yAxisLabelCount = 4;
+        for (let i = 0; i <= yAxisLabelCount; i++) {
+          const value = (maxValue / yAxisLabelCount) * i;
+          const y = canvas.height - padding - value * yScale;
+          ctx.fillText(`${Math.round(value)}K`, padding - 10, y);
+        }
+      }
+
+      // Data for the Pipeline Distribution funnel chart (Slide 6)
+      const pipelineDistributionData = [
+        { status: 'Opportunity', percentage: 28.9, color: '#FF7043' }, // Orange
+        { status: 'Qualified', percentage: 18.9, color: '#42A5F5' }, // Blue
+        { status: 'Sales Accepted', percentage: 17.6, color: '#66BB6A' }, // Green
+        { status: 'New', percentage: 17.1, color: '#AB47BC' }, // Purple
+        { status: 'Churned Customer', percentage: 5.9, color: '#EF5350' }, // Red
+        { status: 'Disqualified', percentage: 5.9, color: '#FFCA28' }, // Amber
+        { status: 'Customer', percentage: 5.7, color: '#26A69A' }, // Teal
+      ];
+
+      function drawFunnelChart() {
+        const canvas = document.getElementById(
+          'pipelineDistributionFunnelChart'
+        );
+        if (!canvas) return;
+
+        const ctx = canvas.getContext('2d');
+        const parentContainer = canvas.parentElement;
+
+        canvas.width = parentContainer.clientWidth;
+        canvas.height = parentContainer.clientHeight;
+
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        // Define padding for the chart area, leaving space for labels on the right
+        const leftRightPadding = 40;
+        const topBottomPadding = 40;
+        const labelAreaWidth = 180; // Increased space for labels on the right
+
+        const chartAreaWidth = canvas.width - leftRightPadding - labelAreaWidth;
+        const chartHeight = canvas.height - 2 * topBottomPadding;
+
+        const segmentHeight = chartHeight / pipelineDistributionData.length;
+        const maxPercentage = pipelineDistributionData[0].percentage; // Highest percentage for scaling the widest part
+
+        // Calculate the funnel's horizontal center within its drawing area
+        const funnelLeftEdge = leftRightPadding;
+        const funnelRightEdge = leftRightPadding + chartAreaWidth;
+        const funnelCenter = (funnelLeftEdge + funnelRightEdge) / 2;
+
+        let currentY = topBottomPadding;
+
+        for (let i = 0; i < pipelineDistributionData.length; i++) {
+          const data = pipelineDistributionData[i];
+          const color = data.color;
+
+          const topPercentage = data.percentage;
+          let bottomPercentage;
+
+          if (i + 1 < pipelineDistributionData.length) {
+            bottomPercentage = pipelineDistributionData[i + 1].percentage;
+          } else {
+            // For the last segment, taper to a small value for the tip
+            bottomPercentage = data.percentage * 0.1; // Taper to 10% of its own proportional width
+            if (bottomPercentage < 1) bottomPercentage = 1; // Ensure a minimum for the tip
+          }
+
+          // Calculate width based on percentage relative to max percentage, scaled to chartAreaWidth
+          const topWidth =
+            (topPercentage / maxPercentage) * (chartAreaWidth * 0.8); // Use 80% of chartAreaWidth for max funnel width
+          const bottomWidth =
+            (bottomPercentage / maxPercentage) * (chartAreaWidth * 0.8);
+
+          // Calculate x coordinates for the trapezoid
+          const x1 = funnelCenter - topWidth / 2;
+          const x2 = funnelCenter + topWidth / 2;
+          const x3 = funnelCenter + bottomWidth / 2;
+          const x4 = funnelCenter - bottomWidth / 2;
+
+          // Draw the trapezoid
+          ctx.beginPath();
+          ctx.moveTo(x1, currentY);
+          ctx.lineTo(x2, currentY);
+          ctx.lineTo(x3, currentY + segmentHeight);
+          ctx.lineTo(x4, currentY + segmentHeight);
+          ctx.closePath();
+          ctx.fillStyle = color; // Simple fill for 2D
+          ctx.fill();
+          ctx.strokeStyle = '#ffffff'; // White border between segments
+          ctx.lineWidth = 2;
+          ctx.stroke();
+
+          // Add external text label with connecting line to the RIGHT
+          const labelText = `${data.status}`;
+          const percentageText = `${data.percentage}%`;
+          const labelLineOffset = 20; // Horizontal distance from funnel edge to start of line
+          const labelTextOffset = 10; // Horizontal distance from end of line to text
+          const labelY = currentY + segmentHeight / 2;
+
+          // Calculate the x-coordinate on the right edge of the funnel segment
+          // This is the midpoint of the right side of the trapezoid
+          const funnelEdgeX =
+            funnelCenter + (topWidth / 2 + bottomWidth / 2) / 2;
+
+          // Draw connecting line
+          ctx.strokeStyle = '#5d6d7e'; // Grey line
+          ctx.lineWidth = 1.5;
+          ctx.beginPath();
+          ctx.moveTo(funnelEdgeX, labelY);
+          ctx.lineTo(funnelEdgeX + labelLineOffset, labelY); // Horizontal line segment
+          ctx.lineTo(canvas.width - leftRightPadding - labelTextOffset, labelY); // Line extending to label area
+          ctx.stroke();
+
+          // Draw label text (status)
+          ctx.fillStyle = '#2c3e50'; // Dark text color
+          ctx.font = '1.1rem Inter';
+          ctx.textAlign = 'right'; // Align text to the right of the line
+          ctx.textBaseline = 'bottom'; // Position label above percentage
+          ctx.fillText(labelText, canvas.width - leftRightPadding, labelY - 2); // Text at the far right edge
+
+          // Draw percentage text
+          ctx.font = 'bold 1.1rem Inter';
+          ctx.textBaseline = 'top'; // Position percentage below label
+          ctx.fillText(
+            percentageText,
+            canvas.width - leftRightPadding,
+            labelY + 2
+          ); // Text at the far right edge
+
+          currentY += segmentHeight;
+        }
+      }
+
+      // Initial draw and redraw on resize
+      window.onload = function () {
+        drawLineChart();
+        drawWinRateCircularChart();
+        drawProductValueBarChart();
+        drawFunnelChart(); // Draw the new funnel chart
+
+        window.addEventListener('resize', () => {
+          drawLineChart();
+          drawWinRateCircularChart();
+          drawProductValueBarChart();
+          drawFunnelChart(); // Redraw funnel chart on resize
+        });
+      };
+    </script>
+  </body>
+</html>
