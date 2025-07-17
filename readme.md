@@ -11,6 +11,10 @@
 | 🎯 **Performance Benchmarking** What are the actual win rate benchmarks for competitive positioning? | 📊 **9.6% overall win rate** with significant performance variance between markets<br>**Belgium** leads at 16.9%, followed by Germany (10.5%) and Italy (10.4%)<br>**83 total wins** across all opportunities—enabling targeted improvement strategies |
 | 🧩 **Product-Market Optimization** Which product-market combinations offer the highest revenue potential? | 🚀 **SAAS: $961K** identified as top revenue opportunity<br>**Services: $847K** and **Custom solution: $488K** complete the product portfolio<br>Three active products represent concentrated opportunity focus for sales prioritization |
 
+<h2 align="center">🛠️ Strategic Solutions for Business Growth</h2>
+<p align="center">
+  <img src="screenshots/solutions.png" width="1200" height="800">
+</p>
 
 <h2 align="center">🛠️ Technologies Used</h2>
 
