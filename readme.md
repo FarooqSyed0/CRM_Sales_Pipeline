@@ -32,7 +32,6 @@
 ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
 ![Apple Numbers](https://img.shields.io/badge/NUMBERS-27C93F?style=for-the-badge&logo=apple&logoColor=white)
 ![Presenti.ai](https://img.shields.io/badge/Presenti.ai-blueviolet?style=for-the-badge)
-![Reveal.js](https://img.shields.io/badge/Reveal.js-F2E142?style=for-the-badge&logo=reveal.js&logoColor=000000)
 ![Seaborn](https://img.shields.io/badge/Seaborn-444876?style=for-the-badge&logo=seaborn&logoColor=white)
 ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
 ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
