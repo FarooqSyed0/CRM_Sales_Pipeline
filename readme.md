@@ -12,6 +12,12 @@
 | 🧩 **Product-Market Optimization** Which product-market combinations offer the highest revenue potential? | 🚀 **SAAS: $961K** identified as top revenue opportunity<br>**Services: $847K** and **Custom solution: $488K** complete the product portfolio<br>Three active products represent concentrated opportunity focus for sales prioritization |
 
 
+<h2 align="center">💡 Strategic Solutions for Business Growth</h2>
+<p align="center">
+  <img src="screenshots/solutions.png" width="1200" height="800">
+</p>
+
+
 <h2 align="center">🛠️ Technologies Used</h2>
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
