@@ -1,0 +1,64 @@
+Status Name,Country,Status Count
+Churned Customer,Austria,9
+Churned Customer,Belgium,9
+Churned Customer,France,18
+Churned Customer,Germany,23
+Churned Customer,Italy,43
+Churned Customer,Netherlands,13
+Churned Customer,Portugal,23
+Churned Customer,Spain,16
+Churned Customer,Switzerland,23
+Customer,Austria,11
+Customer,Belgium,16
+Customer,France,24
+Customer,Germany,17
+Customer,Italy,37
+Customer,Netherlands,14
+Customer,Portugal,28
+Customer,Spain,9
+Customer,Switzerland,15
+Disqualified,Austria,16
+Disqualified,Belgium,14
+Disqualified,France,29
+Disqualified,Germany,17
+Disqualified,Italy,33
+Disqualified,Netherlands,6
+Disqualified,Portugal,20
+Disqualified,Spain,12
+Disqualified,Switzerland,30
+New,Austria,45
+New,Belgium,36
+New,France,79
+New,Germany,73
+New,Italy,92
+New,Netherlands,32
+New,Portugal,62
+New,Spain,24
+New,Switzerland,70
+Opportunity,Austria,57
+Opportunity,Belgium,65
+Opportunity,France,123
+Opportunity,Germany,124
+Opportunity,Italy,173
+Opportunity,Netherlands,56
+Opportunity,Portugal,106
+Opportunity,Spain,54
+Opportunity,Switzerland,109
+Qualified,Austria,31
+Qualified,Belgium,29
+Qualified,France,87
+Qualified,Germany,98
+Qualified,Italy,128
+Qualified,Netherlands,23
+Qualified,Portugal,64
+Qualified,Spain,40
+Qualified,Switzerland,67
+Sales Accepted,Austria,30
+Sales Accepted,Belgium,38
+Sales Accepted,France,62
+Sales Accepted,Germany,68
+Sales Accepted,Italy,114
+Sales Accepted,Netherlands,36
+Sales Accepted,Portugal,68
+Sales Accepted,Spain,34
+Sales Accepted,Switzerland,78
